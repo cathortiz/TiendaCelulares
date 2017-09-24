@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/09/2017 20:46:20 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="clases.Celulares" table="celulares" catalog="tienda_celulares" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="marca" type="string">
+            <column name="marca" length="50" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="50" />
+        </property>
+        <property name="precio" type="java.lang.Integer">
+            <column name="precio" />
+        </property>
+    </class>
+</hibernate-mapping>
